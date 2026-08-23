@@ -2,8 +2,10 @@ import Link from "next/link";
 
 const navigation = [
   { href: "/", label: "Главная" },
-  { href: "/#directions", label: "Направления" },
-  { href: "/#specialization", label: "Специализация" },
+  { href: "/#services", label: "Услуги" },
+  { href: "/#works", label: "Наши работы" },
+  { href: "/#about", label: "О нас" },
+  { href: "/#contacts", label: "Контакты" },
 ];
 
 const linkClasses =
@@ -12,8 +14,8 @@ const linkClasses =
 export function Navigation() {
   return (
     <>
-      <nav aria-label="Основная навигация" className="hidden md:block">
-        <ul className="flex items-center gap-7">
+      <nav aria-label="Основная навигация" className="hidden lg:block">
+        <ul className="flex items-center gap-5 xl:gap-6">
           {navigation.map((item) => (
             <li key={item.href}>
               <Link className={linkClasses} href={item.href}>
@@ -24,7 +26,7 @@ export function Navigation() {
         </ul>
       </nav>
 
-      <details className="group relative md:hidden">
+      <details className="group relative lg:hidden">
         <summary className="flex min-h-11 cursor-pointer list-none items-center rounded-full border border-line px-4 text-xs font-semibold uppercase tracking-[0.14em] text-muted transition-colors hover:text-foreground [&::-webkit-details-marker]:hidden">
           Меню
         </summary>
