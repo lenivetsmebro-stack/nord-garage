@@ -1,0 +1,43 @@
+import Link from "next/link";
+import type { ReactNode } from "react";
+
+type ButtonVariant = "primary" | "secondary";
+
+type ButtonProps = {
+  children: ReactNode;
+  className?: string;
+  href?: string;
+  type?: "button" | "submit" | "reset";
+  variant?: ButtonVariant;
+};
+
+const variantClasses: Record<ButtonVariant, string> = {
+  primary:
+    "border-accent bg-accent text-accent-foreground hover:border-white hover:bg-white",
+  secondary:
+    "border-line bg-transparent text-foreground hover:border-accent hover:bg-surface-elevated",
+};
+
+export function Button({
+  children,
+  className = "",
+  href,
+  type = "button",
+  variant = "primary",
+}: ButtonProps) {
+  const classes = `inline-flex min-h-12 items-center justify-center rounded-full border px-6 text-sm font-semibold transition-colors duration-300 ${variantClasses[variant]} ${className}`;
+
+  if (href) {
+    return (
+      <Link className={classes} href={href}>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <button className={classes} type={type}>
+      {children}
+    </button>
+  );
+}
