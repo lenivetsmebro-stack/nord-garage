@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 
@@ -5,19 +6,19 @@ const brands = ["BMW", "Mercedes-Benz", "Audi", "Volkswagen"];
 
 function VehicleVisual() {
   return (
-    <div
-      aria-label="Стилизованный автомобильный силуэт"
-      className="relative aspect-[5/4] min-h-76 overflow-hidden rounded-[1.75rem] border border-line bg-[#0d0f12] sm:min-h-104 lg:aspect-auto lg:h-full"
-      role="img"
-    >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_42%,rgba(215,217,221,0.16),transparent_27%),linear-gradient(145deg,rgba(255,255,255,0.055),transparent_38%)]" />
-      <div className="absolute inset-y-0 left-[12%] w-px bg-gradient-to-b from-transparent via-white/10 to-transparent" />
-      <div className="absolute inset-x-0 top-[18%] h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-      <div className="absolute right-[3%] top-[24%] h-[49%] w-[95%] -skew-x-12 rounded-[58%_44%_27%_35%] border border-white/18 bg-gradient-to-b from-white/10 via-white/[0.025] to-transparent shadow-[0_26px_70px_rgba(0,0,0,0.55)]" />
-      <div className="absolute right-[12%] top-[31%] h-[19%] w-[47%] -skew-x-[22deg] rounded-t-[70%] border-t border-white/20 bg-white/[0.025]" />
-      <div className="absolute bottom-[28%] left-[14%] h-16 w-16 rounded-full border border-white/20 bg-background shadow-[inset_0_0_0_10px_rgba(255,255,255,0.025)] sm:h-20 sm:w-20" />
-      <div className="absolute bottom-[28%] right-[12%] h-16 w-16 rounded-full border border-white/20 bg-background shadow-[inset_0_0_0_10px_rgba(255,255,255,0.025)] sm:h-20 sm:w-20" />
-      <div className="absolute bottom-[22%] right-[6%] h-px w-[88%] bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+    <div className="relative aspect-[4/3] min-w-0 overflow-hidden rounded-[1.75rem] border border-line bg-[#0d0f12] sm:aspect-[5/4] lg:aspect-auto lg:h-full">
+      <Image
+        alt="Чёрный автомобиль BMW в тёмном сервисном пространстве"
+        className="object-cover object-[62%_center] lg:object-[72%_center]"
+        fill
+        priority
+        sizes="(min-width: 1280px) 40vw, (min-width: 1024px) 38vw, 100vw"
+        src="/images/hero-bmw.png"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/10"
+      />
       <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between sm:bottom-8 sm:left-8 sm:right-8">
         <span className="text-[0.65rem] font-semibold uppercase tracking-[0.24em] text-subtle">
           NORD / 01
