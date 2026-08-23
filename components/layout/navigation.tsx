@@ -3,7 +3,7 @@ import Link from "next/link";
 const navigation = [
   { href: "/", label: "Главная" },
   { href: "/#services", label: "Услуги" },
-  { href: "/#works", label: "Наши работы" },
+  { href: "/works", label: "Наши работы" },
   { href: "/#about", label: "О нас" },
   { href: "/#contacts", label: "Контакты" },
 ];
