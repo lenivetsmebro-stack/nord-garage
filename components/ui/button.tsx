@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-type ButtonVariant = "primary" | "secondary" | "inverse";
+type ButtonVariant = "primary" | "secondary" | "inverse" | "inverseOutline";
 
 type ButtonProps = {
   children: ReactNode;
@@ -18,6 +18,8 @@ const variantClasses: Record<ButtonVariant, string> = {
     "border-line bg-transparent text-foreground hover:border-accent hover:bg-surface-elevated",
   inverse:
     "border-accent-foreground bg-accent-foreground text-accent hover:border-surface-elevated hover:bg-surface-elevated",
+  inverseOutline:
+    "border-accent-foreground/30 bg-transparent text-accent-foreground hover:border-accent-foreground hover:bg-accent-foreground/5",
 };
 
 export function Button({
