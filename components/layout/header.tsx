@@ -10,7 +10,7 @@ export function Header() {
         <Logo />
         <div className="flex items-center gap-5 xl:gap-8">
           <Navigation />
-          <Button className="hidden min-h-10 px-5 lg:inline-flex" href="#booking-preview">
+          <Button className="hidden min-h-10 px-5 lg:inline-flex" href="/#booking-preview">
             Записаться
           </Button>
         </div>
