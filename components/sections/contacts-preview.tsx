@@ -61,7 +61,7 @@ export function ContactsPreview() {
                   Режим работы
                 </dt>
                 <dd className="text-sm font-medium text-foreground sm:text-base">
-                  {contactDetails.schedule}
+                  {contactDetails.scheduleDisplay}
                 </dd>
               </div>
               <div className="grid gap-3 bg-surface px-5 py-5 sm:grid-cols-[9rem_1fr] sm:items-center sm:px-7">
@@ -70,7 +70,7 @@ export function ContactsPreview() {
                 </dt>
                 <dd>
                   <span className="text-sm font-medium text-foreground sm:text-base">
-                    {contactDetails.address}
+                    {contactDetails.addressDisplay}
                   </span>
                 </dd>
               </div>
