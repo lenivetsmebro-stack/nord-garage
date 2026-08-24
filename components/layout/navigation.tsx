@@ -4,7 +4,7 @@ const navigation = [
   { href: "/", label: "Главная" },
   { href: "/#services", label: "Услуги" },
   { href: "/works", label: "Наши работы" },
-  { href: "/#about", label: "О нас" },
+  { href: "/about", label: "О нас" },
   { href: "/#contacts", label: "Контакты" },
 ];
 
