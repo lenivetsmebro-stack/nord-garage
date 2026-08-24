@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "О сервисе",
   description:
     "NORD GARAGE — специализированный подход к обслуживанию BMW, Mercedes-Benz, Audi и Volkswagen.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const approach = [

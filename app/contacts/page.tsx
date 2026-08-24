@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Контакты",
   description:
     "Контакты NORD GARAGE в Калининграде: телефон, мессенджеры, адрес и режим работы.",
+  alternates: {
+    canonical: "/contacts",
+  },
 };
 
 const contactItems = [

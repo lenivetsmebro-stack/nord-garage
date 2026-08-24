@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Наши работы",
   description:
     "Визуальная подборка NORD GARAGE о внимании к автомобилю, процессу и деталям.",
+  alternates: {
+    canonical: "/works",
+  },
 };
 
 const approach = [
