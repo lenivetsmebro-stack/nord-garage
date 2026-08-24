@@ -18,7 +18,9 @@ type ContactDetails = {
   whatsappHref: string;
 };
 
-// Portfolio/demo contact data. Replace non-production values before launch.
+// Portfolio/demo data: address, primary phone, email, site URL, and schedule.
+// User-provided working channels: WhatsApp and Telegram.
+// Replace portfolio/demo values with verified business data before a real launch.
 export const contactDetails: ContactDetails = {
   addressDisplay: "г. Калининград, ул. Автомобильная, 27",
   addressMapHref:
