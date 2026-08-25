@@ -11,7 +11,6 @@ type ContactDetails = {
   scheduleWeekdaysHours: string;
   scheduleWeekdaysLabel: string;
   siteDisplay: string;
-  siteHref: string;
   telegramDisplay: string;
   telegramHref: string;
   whatsappDisplay: string;
@@ -35,7 +34,6 @@ export const contactDetails: ContactDetails = {
   scheduleWeekdaysHours: "09:00–20:00",
   scheduleWeekdaysLabel: "Пн–Сб",
   siteDisplay: "nord-garage.ru",
-  siteHref: "https://nord-garage.ru",
   telegramDisplay: "@KLD_DEMYANENKO_DANIIL",
   telegramHref: "https://t.me/KLD_DEMYANENKO_DANIIL",
   whatsappDisplay: "+7 952 054-43-48",

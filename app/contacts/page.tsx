@@ -43,7 +43,6 @@ const contactItems = [
     value: contactDetails.scheduleDisplay,
   },
   {
-    href: contactDetails.siteHref,
     label: "Сайт",
     value: contactDetails.siteDisplay,
   },
