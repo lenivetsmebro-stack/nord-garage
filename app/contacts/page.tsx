@@ -62,7 +62,7 @@ export default function ContactsPage() {
               </h1>
             </div>
             <p className="border-t border-line pt-6 text-base leading-7 text-muted lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
-              Выберите удобный способ связи — уточним автомобиль, необходимые
+              Напишите в Telegram-бот — он уточнит автомобиль, необходимые
               работы и подходящее время.
             </p>
           </div>

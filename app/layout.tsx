@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/header";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nord-garage.vercel.app"),
+  metadataBase: new URL("https://nord-garage-kld.vercel.app"),
   applicationName: "NORD GARAGE",
   title: {
     default: "NORD GARAGE — премиальный автосервис",

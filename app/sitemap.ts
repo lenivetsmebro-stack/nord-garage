@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { services } from "@/config/services";
 
-const productionOrigin = "https://nord-garage.vercel.app";
+const productionOrigin = "https://nord-garage-kld.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
