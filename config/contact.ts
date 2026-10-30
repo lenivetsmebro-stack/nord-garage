@@ -18,7 +18,7 @@ type ContactDetails = {
 };
 
 // Portfolio/demo data: address, primary phone, email, site URL, and schedule.
-// User-provided working channels: WhatsApp and Telegram.
+// All contact actions go to the Telegram bot @blaze39_web_bot (it qualifies the request and routes it).
 // Replace portfolio/demo values with verified business data before a real launch.
 export const contactDetails: ContactDetails = {
   addressDisplay: "г. Калининград, ул. Автомобильная, 27",
@@ -27,15 +27,15 @@ export const contactDetails: ContactDetails = {
   emailDisplay: "service@nord-garage.ru",
   emailHref: "mailto:service@nord-garage.ru",
   phoneDisplay: "+7 (4012) 77-77-27",
-  phoneHref: "tel:+74012777727",
+  phoneHref: "https://t.me/blaze39_web_bot?start=nord",
   scheduleDisplay: "Пн–Сб: 09:00–20:00 · Вс: 10:00–18:00",
   scheduleSundayHours: "10:00–18:00",
   scheduleSundayLabel: "Вс",
   scheduleWeekdaysHours: "09:00–20:00",
   scheduleWeekdaysLabel: "Пн–Сб",
   siteDisplay: "nord-garage.ru",
-  telegramDisplay: "@KLD_DEMYANENKO_DANIIL",
-  telegramHref: "https://t.me/KLD_DEMYANENKO_DANIIL",
+  telegramDisplay: "@blaze39_web_bot",
+  telegramHref: "https://t.me/blaze39_web_bot?start=nord",
   whatsappDisplay: "+7 952 054-43-48",
-  whatsappHref: "https://wa.me/79520544348",
+  whatsappHref: "https://t.me/blaze39_web_bot?start=nord",
 };

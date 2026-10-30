@@ -4,19 +4,9 @@ import { Container } from "@/components/ui/container";
 
 const contactActions = [
   {
-    href: contactDetails.whatsappHref,
-    label: "Написать в WhatsApp",
-    variant: "inverse" as const,
-  },
-  {
     href: contactDetails.telegramHref,
-    label: "Написать в Telegram",
-    variant: "inverseOutline" as const,
-  },
-  {
-    href: contactDetails.phoneHref,
-    label: "Позвонить",
-    variant: "inverseOutline" as const,
+    label: "Записаться через Telegram",
+    variant: "inverse" as const,
   },
 ];
 
@@ -35,7 +25,7 @@ export function BookingCta() {
             Записаться на обслуживание
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-7 opacity-70">
-            Выберите удобный способ связи — мы уточним автомобиль, необходимые
+            Напишите в Telegram-бот — он уточнит автомобиль, необходимые
             работы и подходящее время.
           </p>
         </div>

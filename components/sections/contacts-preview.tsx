@@ -3,19 +3,9 @@ import { Container } from "@/components/ui/container";
 
 const contactItems = [
   {
-    href: contactDetails.phoneHref,
-    label: "Телефон",
-    value: contactDetails.phoneDisplay,
-  },
-  {
-    href: contactDetails.whatsappHref,
-    label: "WhatsApp",
-    value: contactDetails.whatsappDisplay,
-  },
-  {
     href: contactDetails.telegramHref,
-    label: "Telegram",
-    value: contactDetails.telegramDisplay,
+    label: "Запись",
+    value: "Telegram-бот " + contactDetails.telegramDisplay,
   },
 ];
 
@@ -32,7 +22,7 @@ export function ContactsPreview() {
               Связаться с NORD GARAGE
             </h2>
             <p className="mt-5 max-w-lg text-base leading-7 text-muted">
-              Выберите удобный канал связи для записи и уточнения деталей.
+              Запишитесь через Telegram-бот: он уточнит автомобиль и задачу и передаст заявку мастеру.
             </p>
           </div>
 

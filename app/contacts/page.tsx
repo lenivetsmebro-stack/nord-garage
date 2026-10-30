@@ -7,7 +7,7 @@ import { contactDetails } from "@/config/contact";
 export const metadata: Metadata = {
   title: "Контакты",
   description:
-    "Контакты NORD GARAGE в Калининграде: телефон, мессенджеры, адрес и режим работы.",
+    "Контакты NORD GARAGE в Калининграде: запись через Telegram, адрес и режим работы.",
   alternates: {
     canonical: "/contacts",
   },
@@ -15,24 +15,9 @@ export const metadata: Metadata = {
 
 const contactItems = [
   {
-    href: contactDetails.phoneHref,
-    label: "Телефон",
-    value: contactDetails.phoneDisplay,
-  },
-  {
-    href: contactDetails.whatsappHref,
-    label: "WhatsApp",
-    value: contactDetails.whatsappDisplay,
-  },
-  {
     href: contactDetails.telegramHref,
-    label: "Telegram",
-    value: contactDetails.telegramDisplay,
-  },
-  {
-    href: contactDetails.emailHref,
-    label: "Email",
-    value: contactDetails.emailDisplay,
+    label: "Запись",
+    value: "Telegram-бот " + contactDetails.telegramDisplay,
   },
   {
     label: "Адрес",
@@ -50,19 +35,9 @@ const contactItems = [
 
 const quickActions = [
   {
-    href: contactDetails.whatsappHref,
-    label: "Написать в WhatsApp",
-    variant: "primary" as const,
-  },
-  {
     href: contactDetails.telegramHref,
-    label: "Написать в Telegram",
-    variant: "secondary" as const,
-  },
-  {
-    href: contactDetails.phoneHref,
-    label: "Позвонить",
-    variant: "secondary" as const,
+    label: "Записаться через Telegram",
+    variant: "primary" as const,
   },
 ];
 
@@ -237,10 +212,10 @@ export default function ContactsPage() {
           </div>
           <Button
             className="w-full sm:w-auto"
-            href={contactDetails.whatsappHref}
+            href={contactDetails.telegramHref}
             variant="inverse"
           >
-            Написать в WhatsApp
+            Записаться через Telegram
           </Button>
         </Container>
       </section>
