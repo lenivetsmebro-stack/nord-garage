@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: { yandex: "04400cc156501b12" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
