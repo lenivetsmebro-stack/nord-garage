@@ -38,7 +38,7 @@ export function Footer() {
         </div>
         <div className="mt-8 flex flex-col gap-3 border-t border-line pt-6 text-xs uppercase tracking-[0.14em] text-subtle sm:flex-row sm:justify-between">
           <p>NORD GARAGE</p>
-          <p>Премиальный автосервис</p>
+          <Link className="normal-case tracking-normal transition-colors duration-300 hover:text-foreground" href="/privacy">Политика обработки персональных данных</Link>
         </div>
       </Container>
     </footer>
