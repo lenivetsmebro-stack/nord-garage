@@ -27,10 +27,9 @@ export const metadata: Metadata = {
       "Техническое обслуживание и ремонт BMW, Mercedes-Benz, Audi и Volkswagen.",
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
   },
-  verification: { yandex: "04400cc156501b12" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
